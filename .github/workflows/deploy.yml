@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - '**'  # 모든 파일 변경 감지
+      - '**'
 
 jobs:
   deploy:
@@ -20,7 +20,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ secrets.AWS_REGION }}
+          aws-region: ap-northeast-2  # 직접 리전 지정
       
       - name: Deploy to S3
         run: |
