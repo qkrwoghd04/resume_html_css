@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박재홍 - 이력서</title>
+  <script src="https://kit.fontawesome.com/385cd447bf.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link href="./styles.css" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Pretendard';
+      font-weight: 300;
+    }
+
+    body {
+      background: rgb(204, 204, 204);
+      width: 21cm;
+      height: 29.7cm;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    page {
+      background: white;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 0.5cm;
+      position: relative;
+    }
+
+    page[size="A4"] {
+      width: 21cm;
+      height: 29.7cm;
+    }
+
+    @page {
+      size: 21cm 29.7cm;
+      margin: 0mm;
+    }
+  </style>
+</head>
+
+<body>
+  <page size="A4" id="pdf">
+    <div class="container">
+      <div class="leftPanel">
+        <img src="./profile.jpg" alt="profile">
+        <div class="nameBox">
+          <h4>박재홍</h4>
+          <p>Software Engineer</p>
+        </div>
+        <div class="contactsContainer">
+          <h3>Contacts</h3>
+          <div class="contactLine">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>서울시 마포구</p>
+          </div>
+          <div class="contactLine">
+            <i class="fa-regular fa-envelope"></i>
+            <p>qkrwoghd04@naver.com</p>
+          </div>
+          <div class="contactLine">
+            <i class="fa-solid fa-phone"></i>
+            <p>010-3360-4104</p>
+          </div>
+          <div class="contactLine">
+            <i class="fa-solid fa-globe"></i>
+            <p>jaehong-park.com</p>
+          </div>
+        </div>
+        <!-- Skill -->
+        <div class="skillsContainer">
+          <h3>Skills</h3>
+          <div>
+            <ul>
+              <li>HTML 5, CSS</li>
+              <li>Next.js</li>
+              <li>Expo</li>
+              <li>Node.js</li>
+              <li>AWS(CLF-C02)</li>
+              <li>Java</li>
+              <li>Docker</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Language -->
+        <div class="languagesContainer">
+          <h3>Language</h3>
+          <div class="languageLine">
+            <p>한국어</p>
+            <p class="level">원어민</p>
+          </div>
+          <div class="languageLine">
+            <p>영어</p>
+            <p class="level">비즈니스 수준</p>
+          </div>
+          <div class="languageLine">
+            <p>중국어</p>
+            <p class="level">비즈니스 수준</p>
+          </div>
+        </div>
+        <!-- Education -->
+        <div class="educationContainer">
+          <h3>Education</h3>
+          <h4>Xian-Jiaotong Liverpool University 졸업(GPA 3.5/4.0)</h4>
+        </div>
+      </div>
+
+      <!-- Left Panel -->
+      <div class="rightPanel">
+        <div class="projectContainer">
+
+          <div class="personalContainer">
+            <h3>"결정도 책임도 제가 지겠습니다"</h3>
+            <h4>고등학생 진학 무렵 중국으로 갈 수 있는 기회를 잡았습니다. 넓은 생각을 가지기 위해서는 넓은 곳으로 나가야한다 생각했습니다. 선택과 결정이 없는 인생은 성장도 없다 생각합니다</h4>
+          </div>
+
+          <div class="titleContainer">
+            <div class="titleLine">
+              <h3>상품 관리와 상품 홍보를, 하나의 어플로 (힐링 허브)</h3>
+              <img src="./icon.png" alt="icon">
+            </div>
+            <h4>이 앱은 관리자가 상품을 관리 할 수 있는 기능을 제공함과 동시에, 사용자는 실시간으로 업데이트된 상품 정보를 확인할 수 있는 ALL-IN-ONE APP 입니다 (2024 - 진행중)
+            </h4>
+            <div class="projectLine">
+              <h5>Expo, TailwindCSS, RESTful API, AWS</h5>
+              <h5>Fullstack</h5>
+            </div>
+          </div>
+
+          <div class="contentContainer">
+            <div class="frontContainer">
+              <h3>FE</h3>
+              <ul>
+                <li>Expo와 TailwindCSS 를 통한 개발 프로세스 간소화</li>
+                <h4>다양한 Expo 라이브러리를 사용해 타사 라이브러리 의존성을 줄이고, Expo Go를 통해 개발과정 실시간 모니터링</h4>
+                <li>Componentize를 통한 재사용성 향상</li>
+                <h4>SrollView, FlatGrid, 상품 인기도 정렬 함수와 같이 재사용성이 높은 요소들은 컴포넌트화 시켜 코드의 간결성과 유지보수가 30%이상 개선<h4>
+              </ul>
+            </div>
+            <div class="backendContainer">
+              <h3>BE</h3>
+              <ul>
+                <li>EC2서버 구축 및 EB를 통한 관리</li>
+                <h4>Elastic Beanstalk을 사용하여 서버를 구축 및 환경 변수를 관리하고, Cloudfront와 API G/W를 통해 라우트 된 요청을 REST 서버에서 받아 처리합니다
+                </h4>
+                <li>DynamoDB & S3를 사용하여 상품 정보 및 이미지 관리</li>
+                <h4>DynamoDB와 S3를 사용해 상품의 정보와 이미지를 관리하고, AWS 서비스 간의 연동 효율성과 확장서을 높입니다<h4>
+              </ul>
+            </div>
+            <div class="productionContainer">
+              <h3>배포</h3>
+              <ul>
+                <li>Playstore 스토어 정보 등록</li>
+                <h4>Figma를 사용해 요구되는 픽셀에 맞게 앱 아이콘과 그래픽 이미지를 제작후 기본 스토어 정보를 등록</h4>
+                <li>비공개 테스트 및 프로덕션 준비</li>
+                <h4>2023년 11월 이후 변경된 정책에 따라 20명의 사용자에게 14일동안 비공개 테스트를 진행합니다(진행중)<h4>
+              </ul>
+            </div>
+            <div class="troubleContainer">
+              <h3>트러블슈팅</h3>
+              <ul>
+                <li>Android 9 이상 버전 API 통신 에러</li>
+                <h4><span>[문제]:</span> 네트워크가 연결되어 있는 기기가 상품 정보와 이미지를 받아오지 못함</h4>
+                <h4><span>[원인]:</span> Android 9 이후 부터는 https 사용이 강제됨</h4>
+                <h4><span>[해결]:</span> API G/W를 Cloudfront에 연결하여, 종단 간 암호화된 연결을 제공</h4>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </page>
+</body>
+
+</html>
