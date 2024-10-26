@@ -20,11 +20,11 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ap-northeast-2  # 직접 리전 지정
+          aws-region: ${{ secrets.AWS_REGION }}  # 직접 리전 지정
       
       - name: Deploy to S3
         run: |
           aws s3 sync . s3://${{ secrets.S3_BUCKET }} \
             --exclude ".git/*" \
             --exclude ".github/*" \
-            --delete
+            --delete  
