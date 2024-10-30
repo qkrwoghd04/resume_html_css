@@ -1,3 +1,4 @@
+
 name: Deploy to S3
 
 on:
@@ -28,6 +29,4 @@ jobs:
           aws s3 sync . s3://${{ secrets.S3_BUCKET }} \
             --exclude ".git/*" \
             --exclude ".github/*" \
-            --exclude ".gitignore" \
             --delete  
-
