@@ -9,7 +9,6 @@
   <link rel="stylesheet" as="style" crossorigin
     href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
   <link href="./styles.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <style>
     * {
       font-family: 'Pretendard';
@@ -69,11 +68,11 @@
           </div>
           <div class="contactLine">
             <i class="fa-solid fa-globe"></i>
-            <a href="https://jaehong-park.com">jaehong-park.com</a>
+            <p href="https://jaehong-park.com">jaehong-park.com</p>
           </div>
           <div class="contactLine">
             <i class="fa-solid fa-blog"></i>
-            <a href="https://jelong.tistory.com/">jelong.tistory.com</a>
+            <p href="https://jelong.tistory.com/">jelong.tistory.com</p>
           </div>
         </div>
         <!-- Skill -->
@@ -179,22 +178,6 @@
       </div>
     </div>
   </page>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // PDF 생성 옵션
-        const options = {
-            margin: 0,
-            filename: 'document.pdf',
-            image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { scale: 2 },
-            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-        };
-
-        // PDF 자동 다운로드
-        const element = document.querySelector('page');
-        html2pdf().set(options).from(element).save();
-    });
-</script>
 </body>
 
 </html>
