@@ -9,6 +9,7 @@
   <link rel="stylesheet" as="style" crossorigin
     href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
   <link href="./styles.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <style>
     * {
       font-family: 'Pretendard';
@@ -44,8 +45,8 @@
 </head>
 
 <body>
-  <page size="A4" id="pdf">
-    <div class="container">
+  <page size="A4">
+    <div class="container" id="content">
       <div class="leftPanel">
         <img src="./profile.jpg" alt="profile">
         <div class="nameBox">
@@ -68,7 +69,11 @@
           </div>
           <div class="contactLine">
             <i class="fa-solid fa-globe"></i>
-            <p>jaehong-park.com</p>
+            <a href="https://jaehong-park.com">jaehong-park.com</a>
+          </div>
+          <div class="contactLine">
+            <i class="fa-solid fa-blog"></i>
+            <a href="https://jelong.tistory.com/">jelong.tistory.com</a>
           </div>
         </div>
         <!-- Skill -->
@@ -115,7 +120,7 @@
 
           <div class="personalContainer">
             <h3>"다른 시각으로 바라보고, 경험으로 성장합니다"</h3>
-            <h4>고등학생 진학 무렵 중국으로 갈 수 있는 기회를 잡았습니다. 넓은 생각을 가지기 위해서는 넓은 곳으로 나가야한다 생각했습니다. 선택과 결정이 없는 인생은 성장도 없다 생각합니다</h4>
+            <h4>고등학생 진학 무렵 중국으로 갈 수 있는 기회를 잡았습니다. 넓은 생각을 가지기 위해서는 넓은 곳으로 나가야한다 생각했습니다. 선택과 결정이 없는 인생은 성장도 없다 생각합니다. 대학 진학 중에는 개인 블로그를 운영하며 누적 조회수 36k를 달성했고, 현재는 App 출시를 앞두고 있습니다</h4>
           </div>
 
           <div class="titleContainer">
@@ -174,6 +179,22 @@
       </div>
     </div>
   </page>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // PDF 생성 옵션
+        const options = {
+            margin: 0,
+            filename: 'document.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2 },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        };
+
+        // PDF 자동 다운로드
+        const element = document.querySelector('page');
+        html2pdf().set(options).from(element).save();
+    });
+</script>
 </body>
 
 </html>

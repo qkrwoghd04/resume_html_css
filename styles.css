@@ -40,9 +40,11 @@ img {
   align-items: center;
   gap: 24px;
 }
-.leftPanel p {
+.leftPanel p , a {
   margin-top: 8px;
   margin-bottom: 8px;
+  font-weight: 200;
+  margin: 8px;
 }
 .rightPanel {
   width: 75%;
