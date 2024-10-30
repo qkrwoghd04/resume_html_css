@@ -1,0 +1,209 @@
+h3 {
+  font-weight: 300;
+  width: 100%;
+  margin:0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #D1D5DB;
+}
+
+h4, h5, h6 {
+  font-weight: 200;
+  padding: 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+img {
+  width: 5cm;
+  height: auto;
+  margin-bottom: 0.3cm;
+  object-fit: cover;
+  object-position: 90% 50%;
+  border-radius: 5%;
+  aspect-ratio: 1 / 1; /* 이미지 비율 고정 */
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%
+}
+.leftPanel {
+  width: 27%;
+  background-color: #F3F4F6;
+  padding: 0.7cm;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  gap: 24px;
+}
+.leftPanel p {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-weight: 200;
+  margin: 8px;
+}
+.rightPanel {
+  width: 73%;
+  padding: 0.7cm;
+}
+
+.nameBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contacts */
+
+.contactsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction:  column;
+  justify-content: center;
+  align-items: start;
+}
+
+.imgContainer {
+  width: 16px;
+  height: 16px;
+}
+
+.imgContainer img {
+  margin: 0;
+  width: 100%; 
+  height: 100%;
+  object-fit: contain;
+}
+
+.contactsContainer p  {
+  padding: 8px;
+  margin: 0;
+  font-weight: 200;
+}
+
+.contactLine {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+/* Skills */
+
+.skillsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction:  column;
+  justify-content: center;
+  align-items: start;
+}
+
+.skillsContainer ul {
+  
+  width: 100%;
+  padding: 12px ;
+  padding-top: 8px;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.skillsContainer li {
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+
+/* Languages */
+
+.languagesContainer {
+  width: 100%;
+  display: flex;
+  flex-direction:  column;
+  justify-content: center;
+  align-items: start;
+}
+
+.languageLine {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.level {
+  color:#5e636c;
+}
+
+/* Education */
+
+.educationContainer {
+  width: 100%;
+  display: flex;
+  flex-direction:  column;
+  justify-content: center;
+  align-items: start;
+}
+
+/* Right Panel */
+
+.projectLine {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* ProjectContent */
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 24px;
+}
+
+.titleLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  border-bottom: 1px solid #D1D5DB;
+}
+
+.titleLine h3 {
+  width: 380px;
+  border: none;
+}
+
+.titleLine img {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  margin-right: 8px;
+
+}
+
+.contentContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.contentContainer ul {
+  padding-left:  16px;
+  font-size: smaller;
+}
+
+.contentContainer ul li {
+  font-weight: 400;
+}
