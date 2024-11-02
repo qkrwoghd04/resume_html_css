@@ -38,7 +38,7 @@ img {
   flex-direction: column;
   justify-content: top;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
 }
 .leftPanel p {
   margin-top: 8px;
@@ -156,7 +156,6 @@ img {
 }
 
 /* Right Panel */
-
 .projectLine {
   width: 100%;
   display: flex;
