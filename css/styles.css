@@ -1,5 +1,4 @@
-
-
+/* 기본 세팅 */
 body {
   background: rgb(204, 204, 204);
   width: 21cm;
@@ -25,347 +24,123 @@ page[size="A4"] {
   size: 21cm 29.7cm;
   margin: 0mm;
 }
-
-b {
-  font-weight: 600;
-}
-
-h3 {
-  font-weight: 500;
-  width: 100%;
-  margin:0;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #D1D5DB;
-}
-
-h4, h5, h6 {
-  font-weight: 300;
-  padding: 0;
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-
-img {
-  width: 5cm;
-  height: auto;
-  margin-bottom: 0.3cm;
-  object-fit: cover;
-  border-radius: 5%;
-  aspect-ratio: 1 / 1; /* 이미지 비율 고정 */
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 100%
-}
-.leftPanel {
-  width: 27%;
-  background-color: #F3F4F6;
-  padding: 0.7cm;
-  display: flex;
-  flex-direction: column;
-  justify-content: top;
-  align-items: center;
-  gap: 16px;
-}
-.leftPanel p {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  font-weight: 200;
-  margin: 8px;
-}
-.rightPanel {
-  width: 73%;
-  padding: 0.7cm;
-}
-
-.nameBox {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.nameBox h4 {
-  font-weight: 800;
-}
-
-/* Contacts */
-
-.contactsContainer {
-  width: 100%;
-  display: flex;
-  flex-direction:  column;
-  justify-content: center;
-  align-items: start;
-}
-
-.imgContainer {
-  width: 16px;
-  height: 16px;
-}
-
-.imgContainer img {
-
-  width: 0.5cm; 
-  height: 0.5cm;
-  object-fit: contain;
-}
-
-.contactsContainer p  {
-  padding: 8px;
-  margin: 0;
-  font-weight: 200;
-}
-
-.contactLine {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: start;
-}
-
-/* Skills */
-
-.skillsContainer {
-  width: 100%;
-  display: flex;
-  flex-direction:  column;
-  justify-content: center;
-  align-items: start;
-}
-
-.skillsContainer ul {
-  
-  width: 100%;
-  padding: 12px ;
-  padding-top: 8px;
-  padding-bottom: 0;
-  margin: 0;
-}
-
-.skillsContainer li {
-  font-weight: 200;
-  margin-bottom: 10px;
-}
-
-
-/* Languages */
-
-.languagesContainer {
-  width: 100%;
-  display: flex;
-  flex-direction:  column;
-  justify-content: center;
-  align-items: start;
-}
-
-.languageLine {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.level {
-  color:#5e636c;
-}
-
-/* Education */
-
-.educationContainer {
-  width: 100%;
-  display: flex;
-  flex-direction:  column;
-  justify-content: center;
-  align-items: start;
-}
-
-/* Right Panel */
-.projectLine {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
-/* ProjectContent */
-.projectContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  gap: 24px;
-}
-
-.titleLine {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  border-bottom: 1px solid #D1D5DB;
-}
-
-.titleLine h3 {
-  width: 420px;
-  border: none;
-}
-
-.titleLine img {
-  margin: 0;
-  width: 24px;
-  height: 24px;
-}
-
-.contentContainer{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-}
-
-.contentContainer ul {
-  padding-left:  16px;
-  font-size: smaller;
-}
-
-.contentContainer ul li {
-  font-weight: 400;
-}
-
-/* 기본 A4 스타일 유지 */
-body {
-  background: rgb(204, 204, 204);
-  width: 21cm;
-  height: 29.7cm;
-  margin: 0 auto;
-  overflow-x: hidden;
-}
-
-page {
-  background: white;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 0.5cm;
-  position: relative;
-}
-
-page[size="A4"] {
-  width: 21cm;
-  height: 29.7cm;
-}
-
-/* 기존 스타일 유지 */
-.container {
+.root {
   display: flex;
   flex-direction: row;
   width: 100%;
   height: 100%;
 }
-
-
-/* 모바일 대응을 위한 미디어 쿼리 */
-@media screen and (max-width: 768px) {
-  body {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    background: white;
-    overflow: visible; 
-  }
-
-  page {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    box-shadow: none;
-    overflow: visible; 
-    min-height: 100%; 
-  }
-
-  page[size="A4"] {
-    width: 100%;
-    height: auto;
-    overflow: visible; 
-  }
-
-  .container {
-    flex-direction: column;
-    height: auto; 
-    overflow: visible; 
-  }
-
-  .leftPanel {
-    width: 100%;
-    padding: 1rem;
-    height: auto; 
-  }
-
-  .rightPanel {
-    width: 100%;
-    padding: 1rem;
-    height: auto;
-  }
-
-  /* 프로필 이미지 크기 조정 */
-  img#profile {
-    width: 40%;
-    max-width: 200px;
-  }
-
-  /* 연락처 정보 줄바꿈 처리 */
-  .contactLine {
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-
-  /* 프로젝트 타이틀 라인 조정 */
-  .titleLine {
-    flex-wrap: wrap;
-  }
-
-  .titleLine h3 {
-    width: 100%;
-  }
-
-  /* 프로젝트 기술 스택과 역할 라인 조정 */
-  .projectLine {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-
-  /* 긴 텍스트 처리 */
-  .contactLine p, 
-  h4, 
-  .projectContainer h4 {
-    word-break: break-word;
-  }
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+  padding: 0;
 }
 
-/* 인쇄용 스타일 유지 */
-@media print {
-  body {
-    width: 21cm;
-    height: 29.7cm;
-    margin: 0;
-    padding: 0;
-    background: white;
-  }
+/* 프로필 벨트 */
+.profile-belt {
+  width: 100%;
+  height: 13%;
+  background-color: white;
+  opacity: 90%;
+  position: absolute;
+  top: 20%;
+  display: flex;
+  align-items: center;
+}
 
-  page {
-    margin: 0;
-    border: none;
-    width: 21cm;
-    height: 29.7cm;
-  }
+.belt-container-left {
+  padding: 0px 100px;
+}
+
+.belt-container-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.belt-content > p:first-of-type {
+  font-weight: bold;
+}
+
+/* 왼쪽  */
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 100%;
+  background-color: #393939; 
+  color: white;
+}
+.left-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px 0px 30px;
+}
+/* 이미지 컨테이너 */
+.img-container {
+  width: 100%;
+  height: 25%;
+  margin-bottom: 30%;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+/* 기술 스택 컨테이너 */
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px 0px 30px;
+}
+.skill-content > ul{
+  padding: 0px 0px 0px 20px;
+  margin: 20px 0px 0px 0px;
+}
+.skill-content > ul > li{
+  padding: 0px 0px 10px 0px 
+}
+/* 언어 능력 컨테이너 */
+.language-content {
+  padding: 20px 30px 0px 0px;
+}
+
+.language-item {
+  margin-bottom: 15px;
+}
+
+.language-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #555555;
+  border-radius: 1px;
+}
+.progress {
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: width 1s ease-in-out;
+}
+/* 최종 학력 컨테이너 */
+.education-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 10px;
+}
+/* 소셜 링크 컨테이너 */
+.social-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 10px;
+}
+/* 오른쪽 패널 */
+.right-panel{ 
+  flex: 1;
 }
