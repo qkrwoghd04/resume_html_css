@@ -2,22 +2,20 @@
 body {
   background: rgb(204, 204, 204);
   width: 21cm;
-  height: 29.7cm;
+  min-height: 29.7cm;
   margin: 0 auto;
-  overflow: hidden;
+  overflow: auto;
 }
 
 page {
   background: white;
   display: block;
   margin: 0 auto;
-  margin-bottom: 0.5cm;
   position: relative;
 }
 
 page[size="A4"] {
   width: 21cm;
-  height: 29.7cm;
 }
 
 @page {
@@ -35,14 +33,18 @@ h1,h2,h3,h4,h5,h6,p {
   padding: 0;
 }
 
+h3 {
+  font-weight: bold;
+}
+
 /* 프로필 벨트 */
 .profile-belt {
   width: 100%;
-  height: 13%;
+  height: 10%;
   background-color: white;
   opacity: 90%;
   position: absolute;
-  top: 20%;
+  top: 19%;
   display: flex;
   align-items: center;
 }
@@ -79,7 +81,7 @@ h1,h2,h3,h4,h5,h6,p {
 .img-container {
   width: 100%;
   height: 25%;
-  margin-bottom: 35%;
+  margin-bottom: 25%;
 }
 img {
   width: 100%;
@@ -92,6 +94,15 @@ img {
   display: flex;
   flex-direction: column;
   padding: 20px 0px 0px 30px;
+}
+.skill-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.skill-title > h5 {
+  color: #999;
 }
 .skill-content > ul{
   padding: 0px 0px 0px 20px;
@@ -117,6 +128,10 @@ img {
   justify-content: space-between;
   margin-bottom: 5px;
 }
+
+.language-info > h5 {
+  color: #999
+}
 .progress-bar {
   width: 100%;
   height: 10px;
@@ -135,6 +150,11 @@ img {
   flex-direction: column;
   margin-top: 20px;
   gap: 10px;
+  color: #999
+}
+.education-content > span > b {
+  font-weight: 500;
+  color: white;
 }
 /* 소셜 링크 컨테이너 */
 .social-content {
@@ -178,12 +198,16 @@ img {
 
 .profile-info-content {
   line-height: 1.5;
+  font-size: 0.85rem;
+}
+.profile-info-content > b {
+  font-weight: bold;
 }
 
 /* 빈 공간 */
 .empty-space {
   width: 100%;
-  height: 20%;
+  height: 15%;
 }
 
 /* 프로젝트 경험 */
@@ -214,12 +238,25 @@ img {
   margin-bottom: 10px;
 }
 
-.year {
+.project-item-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-item-header > h4 {
   font-weight: bold;
-  color: #333;
-  margin: 0px 0px 10px 0px;
 }
 
 .project-item > ul {
   padding: 0px 0px 0px 20px;
+}
+
+.project-item > ul > li {
+  font-size: 0.85rem;
+}
+
+.project-item > ul > li > b {
+  font-weight: bold;
+  color: rgb(60, 60, 255)
 }
