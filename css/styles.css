@@ -266,3 +266,27 @@ img {
   font-weight: bold;
   color: rgb(255, 65, 65)
 }
+
+/* 인쇄용 스타일 */
+@media print {
+  body {
+    background: white;
+  }
+  
+  .profile-belt {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.8),
+                0 4px 12px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, 
+                rgba(255, 255, 255, 0.9) 0%,
+                rgba(255, 255, 255, 0.8) 50%, 
+                rgba(255, 255, 255, 0.95) 100%);
+  }
+  
+  .project-item > ul > li > b {
+    color: rgb(200, 50, 50) !important;
+  }
+}
