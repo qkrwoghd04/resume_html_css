@@ -29,7 +29,13 @@ page[size="A4"] {
   width: 100%;
   height: 100%;
 }
-h1,h2,h3,h4,h5,h6,p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
   padding: 0;
 }
@@ -76,7 +82,7 @@ h3 {
   flex-direction: column;
   width: 35%;
   height: 100%;
-  background-color: #393939; 
+  background-color: #393939;
   color: white;
 }
 .left-container {
@@ -111,15 +117,15 @@ img {
 .skill-title > h5 {
   color: #999;
 }
-.skill-content > ul{
+.skill-content > ul {
   padding: 0px 0px 0px 20px;
   margin: 20px 0px 0px 0px;
 }
-.skill-content > ul > li{
-  padding: 0px 0px 10px 0px 
+.skill-content > ul > li {
+  padding: 0px 0px 10px 0px;
 }
 .skill-content > ul > li:last-child {
-  padding: 0px; 
+  padding: 0px;
 }
 /* 언어 능력 컨테이너 */
 .language-content {
@@ -137,7 +143,7 @@ img {
 }
 
 .language-info > h5 {
-  color: #999
+  color: #999;
 }
 .progress-bar {
   width: 100%;
@@ -157,7 +163,7 @@ img {
   flex-direction: column;
   margin-top: 20px;
   gap: 10px;
-  color: #999
+  color: #999;
 }
 .education-content > span > b {
   font-weight: 500;
@@ -171,12 +177,11 @@ img {
   gap: 5px;
 }
 
-
 /* 오른쪽 패널 */
 /* 공통 스타일링 */
-.right-panel{ 
+.right-panel {
   flex: 1;
-  padding: 20px
+  padding: 20px;
 }
 
 .right-container {
@@ -184,7 +189,7 @@ img {
   align-items: center;
   width: 100%;
   gap: 15px;
-  margin: 20px 0px 30px 0px 
+  margin: 20px 0px 30px 0px;
 }
 
 .right-title {
@@ -237,7 +242,7 @@ img {
   border-radius: 50%;
 }
 
-.project-content .project-item{
+.project-content .project-item {
   padding: 15px;
   border: 1px solid #333;
   border-radius: 8px;
@@ -264,7 +269,6 @@ img {
 
 .project-item > ul > li > b {
   font-weight: bold;
-  color: rgb(255, 65, 65)
 }
 
 /* 인쇄용 스타일 */
@@ -272,20 +276,22 @@ img {
   body {
     background: white;
   }
-  
+
   .profile-belt {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
     border: 2px solid rgba(0, 0, 0, 0.1);
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.8),
-                0 4px 12px rgba(0, 0, 0, 0.15);
-    background: linear-gradient(135deg, 
-                rgba(255, 255, 255, 0.9) 0%,
-                rgba(255, 255, 255, 0.8) 50%, 
-                rgba(255, 255, 255, 0.95) 100%);
+      0 4px 12px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.8) 50%,
+      rgba(255, 255, 255, 0.95) 100%
+    );
   }
-  
+
   .project-item > ul > li > b {
     color: rgb(200, 50, 50) !important;
   }

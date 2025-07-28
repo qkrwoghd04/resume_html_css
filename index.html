@@ -1,200 +1,229 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>박재홍 - 이력서</title>
+    <link href="./css/styles.css" rel="stylesheet" />
+    <style>
+      @font-face {
+        font-family: "SpoqaHanSansNeo";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+          format("woff");
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>박재홍 - 이력서</title>
-  <link href="./css/styles.css" rel="stylesheet">
-  <style>
-    @font-face {
-      font-family: 'SpoqaHanSansNeo';
-      src: url('./fonts/SpoqaHanSansNeo-Regular.ttf') format('truetype');
-    }
+      * {
+        font-family: "SpoqaHanSansNeo", sans-serif;
+        font-weight: 400;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
 
-    * {
-      font-family: 'SpoqaHanSansNeo', sans-serif;
-      font-weight: 400;
-    }
-  </style>
-</head>
-
-<body>
-  <page size="A4">
-    <div class="root" id="root">
-      <div class="left-panel">
-        <!-- 이미지  -->
-        <div class="img-container">
-          <img src="./assets/profile.jpg" alt="profile">
-        </div>
-        <!-- 기술 스택 -->
-        <div class="left-container">
-          <div class="skill-title">
-            <h3>EXPERIENCE With</h3>
-            <h5>다뤄본 기술</h5>
+  <body>
+    <page size="A4">
+      <div class="root" id="root">
+        <div class="left-panel">
+          <!-- 이미지  -->
+          <div class="img-container">
+            <img src="./assets/profile.jpg" alt="profile" />
           </div>
-
-          <div class="skill-content">
-            <ul>
-              <li>HTML5, CSS3, JS, TS</li>
-              <li>React Native(Expo)</li>
-              <li>React</li>
-              <li>Zustand, React-Query</li>
-              <li>Emotion, Styled-Components</li>
-              <li>Jest</li>
-            </ul>
-          </div>
-        </div>
-        <!-- 언어 능력 -->
-        <div class="left-container">
-          <h3>LANGUAGE</h3>
-          <div class="language-content">
-            <div class="language-item">
-              <div class="language-info">
-                <span>CHINESE</span>
-                <h5>회화 가능</h5>
-              </div>
-
+          <!-- 기술 스택 -->
+          <div class="left-container">
+            <div class="skill-title">
+              <h3>EXPERIENCE With</h3>
+              <h5>다뤄본 기술</h5>
             </div>
-            <div class="language-item">
-              <div class="language-info">
-                <span>ENGLISH</span>
-                <h5>회화 가능</h5>
-              </div>
 
-            </div>
-          </div>
-        </div>
-        <!-- 최종 학력 -->
-        <div class="left-container">
-          <h3>EDUCATION</h3>
-          <div class="education-content">
-            <span><b>LG CNS AM CAMP 1기</b> <br/>2024.12 - 2025.06</span>
-            <span><b>University of Liverpool</b> <br/>2017.09 - 2024.08</span>
-            <span><b>China HongKong English School</b> <br/>2018.03 - 2021.02</span>
-          </div>
-        </div>
-        <!-- Github, LinkedIn -->
-        <div class="left-container">
-          <h3>SOCIAL LINK</h3>
-          <div class="social-content">
-            <h5>github.com/qkrwoghd04</h5>
-            <h5>linkedin.com/in/jaehong-park-12328a303/</h5>
-          </div>
-        </div>
-      </div>
-
-      <!-- 오른쪽 패널 -->
-      <div class="right-panel">
-        <!-- 프로필 정보 -->
-        <div class="right-container">
-          <span class="right-title">디테일과 품질을 고민하는 개발자 박재홍입니다</span>
-          <div class="divider-line"></div>
-        </div>
-        <p class="profile-info-content">
-          저는 사용자 중심 UI와 개발자 경험 향상을 지향하며, React 기반 개발 역량 강화에 집중하고 있습니다.
-현재는 기존 프로젝트의 TypeScript 전환과 CI 환경에서의 테스트 자동화(Jest/Lighthouse)를 관심을 가지고 진행 중이며,
-최근에는 LG CNS AM CAMP 1기에서 <b>총 4번</b>의 프로젝트에서 모두 팀장 역할로 팀을 이끌며, <b>해커톤 대상</b>과 <b>최종 프로젝트 우수상</b>을 수상했습니다
-        </p>
-
-        <!-- 빈공간 -->
-        <div class="empty-space"></div>
-
-        <!-- 프로젝트 경험 -->
-        <div class="right-container">
-          <span class="right-title">WORKS EXPERIENCE</span>
-          <div class="divider-line"></div>
-        </div>
-
-        <!-- 프로젝트 -->
-        <div class="project-container">
-          <div class="project-content">
-            <div class="project-item">
-              <div class="project-item-header">
-                <h4>금융 서비스 장애 대응 관제 시스템 구축 (SSOK & SSOM)</h4>
-                <h5>📅 2025/04 - 2025/06 | 8인팀 | 팀장 & FE | github.com/Team-SSOK</h5>
-                <h5 style="color: #444; font-weight: bold">BLE 기반 송금 서비스 SSOK과 실시간 서비스 장애 모니터링 시스템 SSOM을 구현한 통합 금융 프로젝트입니다</h5>
-              </div>
-
+            <div class="skill-content">
               <ul>
-                <li>
-                  LG CNS AM CAMP 1기 <b>최종 프로젝트 우수상 수상</b>
-                </li>
-                <li>
-                  iBeacon 프로토콜 응용한 BLE 기반 근거리 송금 기능 구현
-                </li>
-                <li>FCM, SSE 연동 푸시 알림 및 딥링크 시스템 구축</li>
-                <li>Zustand 기반 전역 상태 관리 아키텍처 설계 및 도메인 단위 Slice 적용</li>
+                <li>HTML5, CSS3, JS, TS</li>
+                <li>React Native(Expo)</li>
+                <li>React</li>
+                <li>Zustand, React-Query</li>
+                <li>Emotion, Styled-Components</li>
+                <li>Jest</li>
               </ul>
             </div>
           </div>
-          <div class="project-content">
-            <div class="project-item">
-              <div class="project-item-header">
-                <h4>“하루에 하나” 교양 지식 공유 웹 서비스 (Haruhan)</h4>
-                <h5>📅 2025/02 - 2025/04 | 5인팀 | FE | github.com/HaruHan-Mail</h5>
-                <h5 style="color: #444; font-weight: bold">매일 하나씩 이메일로 교양 지식을 전달하는 구독 기반 웹 서비스입니다</h5>
+          <!-- 언어 능력 -->
+          <div class="left-container">
+            <h3>LANGUAGE</h3>
+            <div class="language-content">
+              <div class="language-item">
+                <div class="language-info">
+                  <span>CHINESE</span>
+                  <h5>회화 가능</h5>
+                </div>
               </div>
-
-              <ul>
-                <li><b>100+</b> 사용자 확보 후 실서비스 운영 중이며, 직접 운영 관리를 통해 안정성 지속 검증</li>
-                <li>
-                  이메일 파라미터 기반 무회원가입 인증 시스템 구현
-                </li>
-                <li>
-                  Three.js 중심의 3D 인터랙티브 메인 페이지 UI 구현
-                </li>
-                <li>AWS SES 기반 자동 이메일 발송 프로세스 직접 설계 및 구현, Thymeleaf로 템플릿 구성</li>
-              </ul>
+              <div class="language-item">
+                <div class="language-info">
+                  <span>ENGLISH</span>
+                  <h5>회화 가능</h5>
+                </div>
+              </div>
             </div>
           </div>
-          
-          <div class="project-content">
-            <div class="project-item">
-              <div class="project-item-header">
-                <h4>건강 식품 통합 관리 앱 HealingHub</h4>
-                <h5>📅 2024.08 ~ 2024.12 | 개인 프로젝트 | /qkrwoghd04/healing-hub</h5>
-                <h5 style="color: #444; font-weight: bold">건강기능식품 판매 모바일 커머스 애플리케이션입니다</h5>
-              </div>
-
-              <ul>
-                <li>
-                  <b>Google Play Store 정식 출시</b> 개발-배포 전체 프로세스 설계 및 구현
-                </li>
-                <li>
-                  사용자 편의를 위한 상품 탐색·걸음 수 측정 기능과, 관리자를 위한 상품 관리·푸시 발송 기능 제공
-                </li>
-              </ul>
+          <!-- 최종 학력 -->
+          <div class="left-container">
+            <h3>EDUCATION</h3>
+            <div class="education-content">
+              <span><b>LG CNS AM CAMP 1기</b> <br />2024.12 - 2025.06</span>
+              <span
+                ><b>University of Liverpool</b> <br />2017.09 - 2024.08</span
+              >
+              <span
+                ><b>China HongKong English School</b> <br />2018.03 -
+                2021.02</span
+              >
             </div>
           </div>
-          
+          <!-- Github, LinkedIn -->
+          <div class="left-container">
+            <h3>SOCIAL LINK</h3>
+            <div class="social-content">
+              <h5>github.com/qkrwoghd04</h5>
+              <h5>linkedin.com/in/jaehong-park-12328a303/</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- 오른쪽 패널 -->
+        <div class="right-panel">
+          <!-- 프로필 정보 -->
+          <div class="right-container">
+            <span class="right-title"
+              >디테일과 품질을 고민하는 개발자 박재홍입니다</span
+            >
+            <div class="divider-line"></div>
+          </div>
+          <p class="profile-info-content">
+            저는 사용자 중심 UI와 개발자 경험 향상을 지향하며, React 기반 개발
+            역량 강화에 집중하고 있습니다. 최근에는 기존 Haruhan 프로젝트에서
+            Lighthouse를 활용해 웹 성능 측정 및 최적화에 관심을 가지고
+            지속적으로 개선하고 있습니다. 실제로 Nginx 캐시 정책 설정, 이미지
+            최적화(webp, avif), Gzip/Brotli 압축 등을 적용해 성능을 56%에서
+            90%까지 향상시켰습니다. 최근에는 LG CNS AM CAMP 1기에서
+            <b>총 4번</b>의 프로젝트에서 모두 팀장 역할로 팀을 이끌며,
+            <b>해커톤 대상</b>과 <b>최종 프로젝트 우수상</b>을 수상했습니다
+          </p>
+
+          <!-- 빈공간 -->
+          <div class="empty-space"></div>
+
+          <!-- 프로젝트 경험 -->
+          <div class="right-container">
+            <span class="right-title">WORKS EXPERIENCE</span>
+            <div class="divider-line"></div>
+          </div>
+
+          <!-- 프로젝트 -->
+          <div class="project-container">
+            <div class="project-content">
+              <div class="project-item">
+                <div class="project-item-header">
+                  <h4>금융 서비스 장애 대응 관제 시스템 구축 (SSOK & SSOM)</h4>
+                  <h5>
+                    📅 2025/04 - 2025/06 | 8인팀 | 팀장 & FE |
+                    github.com/Team-SSOK
+                  </h5>
+                  <h5 style="color: #444; font-weight: bold">
+                    BLE 기반 송금 서비스 SSOK과 실시간 서비스 장애 모니터링
+                    시스템 SSOM을 구현한 통합 금융 프로젝트입니다
+                  </h5>
+                </div>
+
+                <ul>
+                  <li>LG CNS AM CAMP 1기 <b>최종 프로젝트 우수상 수상</b></li>
+                  <li>
+                    iBeacon 프로토콜 응용한 BLE 기반 근거리 송금 기능 구현
+                  </li>
+                  <li>FCM, SSE 연동 푸시 알림 및 딥링크 시스템 구축</li>
+                  <li>
+                    Zustand 기반 전역 상태 관리 아키텍처 설계 및 도메인 단위
+                    Slice 적용
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-item">
+                <div class="project-item-header">
+                  <h4>“하루에 하나” 교양 지식 공유 웹 서비스 (Haruhan)</h4>
+                  <h5>
+                    📅 2025/02 - 2025/04 | 5인팀 | FE | github.com/HaruHan-Mail
+                  </h5>
+                  <h5 style="color: #444; font-weight: bold">
+                    매일 하나씩 이메일로 교양 지식을 전달하는 구독 기반 웹
+                    서비스입니다
+                  </h5>
+                </div>
+
+                <ul>
+                  <li>
+                    <b>100+</b> 사용자 확보 후 실서비스 운영 중이며, 직접 운영
+                    관리를 통해 안정성 지속 검증
+                  </li>
+                  <li>
+                    기존 CSS3에서 Emotion CSS로 스타일링 체계를 점진적으로 개선
+                  </li>
+                  <li>GSAP 기반 드래그 인터랙티브 메인 페이지 UI 구현</li>
+                  <li>
+                    AWS SES 기반 자동 이메일 발송 프로세스 직접 설계 및 구현,
+                    Thymeleaf로 템플릿 구성
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-item">
+                <div class="project-item-header">
+                  <h4>건강 식품 통합 관리 앱 HealingHub</h4>
+                  <h5>
+                    📅 2024.08 ~ 2024.12 | 개인 프로젝트 |
+                    /qkrwoghd04/healing-hub
+                  </h5>
+                  <h5 style="color: #444; font-weight: bold">
+                    건강기능식품 판매 모바일 커머스 애플리케이션입니다
+                  </h5>
+                </div>
+
+                <ul>
+                  <li>
+                    <b>Google Play Store 정식 출시</b> 개발-배포 전체 프로세스
+                    설계 및 구현
+                  </li>
+                  <li>
+                    사용자 편의를 위한 상품 탐색·걸음 수 측정 기능과, 관리자를
+                    위한 상품 관리·푸시 발송 기능 제공
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-    </div>
-
-
-    <!-- 프로필 벨트 Absolute -->
-    <div class="profile-belt">
-      <!-- 이름, 직업 -->
-      <div class="belt-container-left">
-        <h1>JAEHONG PARK</h1>
-        <h3>Frontend Developer</h3>
-      </div>
-      <!-- 핸드폰 번호, 이메일, 주소 -->
-      <div class="belt-container-right">
-        <div class="belt-content">
-          <p>PHONE</p>
-          <p>010-3360-4104</p>
+      <!-- 프로필 벨트 Absolute -->
+      <div class="profile-belt">
+        <!-- 이름, 직업 -->
+        <div class="belt-container-left">
+          <h1>JAEHONG PARK</h1>
+          <h3>Frontend Developer</h3>
         </div>
-        <div class="belt-content">
-          <p>EMAIL</p>
-          <p>qkrwoghd04@naver.com</p>
+        <!-- 핸드폰 번호, 이메일, 주소 -->
+        <div class="belt-container-right">
+          <div class="belt-content">
+            <p>PHONE</p>
+            <p>010-3360-4104</p>
+          </div>
+          <div class="belt-content">
+            <p>EMAIL</p>
+            <p>qkrwoghd04@naver.com</p>
+          </div>
         </div>
-
       </div>
-    </div>
-  </page>
-</body>
-
+    </page>
+  </body>
 </html>
